@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07110c"><meta name="description" content="A private chat room for friends."><title>Kayum Friends Chat</title><link rel="stylesheet" href="/style.css"></head>
+<body><div class="app"><header><div class="brand"><div class="mini-logo">K</div><div><h1>Kayum Friends Chat</h1><p><i class="dot"></i> Private friends room</p></div></div><form method="post" action="/logout"><button class="logout" type="submit">Log out</button></form></header>
+<main class="chat-shell"><section class="welcome"><div><p class="eyebrow">YOUR SPACE · YOUR FRIENDS</p><h2>Say hello<span>.</span></h2><p class="muted">Keep the conversation kind and friendly.</p></div><div class="online-pill"><i class="dot"></i> Room is open</div></section>
+<div class="name-row"><label for="username">Your name</label><input id="username" maxlength="20" placeholder="Enter your name" autocomplete="nickname"></div>
+<section id="messages" class="messages" aria-live="polite"><div class="empty">Loading messages…</div></section>
+<form id="chat-form" class="composer"><input id="message" maxlength="1000" placeholder="Write a message…" autocomplete="off" required><button class="send" aria-label="Send message" type="submit">➤</button></form><p class="footnote">Be respectful. Don't share private information or passwords in chat.</p></main></div>
+<script src="/socket.io/socket.io.js"></script><script src="/chat.js"></script></body></html>
